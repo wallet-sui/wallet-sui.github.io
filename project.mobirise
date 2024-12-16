@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "sui wallet",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#1ba7e0",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#1ba7e0"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/sui-wallet_1.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://wallet-sui.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://wallet-sui.github.io/sitemap.xml",
+    "mbrsiteDomain": "dybavzc1ei",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Sui Wallet | Suiscan™ | Home Official Site",
+        "meta_descr": "Sui Wallet’s intuitive design and powerful features means you're always just a few clicks away from everything the Sui ecosystem has to offer.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/sui-wallet.png\" alt=\"Sui Wallet\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "ux6GqJVh8k",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#1ba7e0",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#1ba7e0"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Sui Wallet: Your Gateway to the Sui Blockchain Ecosystem</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the rapidly evolving world of blockchain technology, wallets play a crucial role in facilitating transactions, managing assets, and interacting with decentralized applications (dApps). <a href=\"https://wallet-sui.github.io/\" class=\"text-primary\"><b>Sui Wallet</b></a> stands out as a robust and user-friendly solution specifically designed for the Sui blockchain. This wallet not only provides secure storage for digital assets but also offers a seamless experience for users looking to navigate the Sui ecosystem. In this blog, we will explore what <a href=\"https://suiwallet.com/\" class=\"text-primary\"><b>Sui Wallet</b></a> is, its key features, how it works, and its significance in the broader blockchain landscape.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Sui Wallet?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Sui Wallet is a digital wallet tailored for users of the Sui blockchain, a next-generation platform designed for scalability and efficiency. Sui Wallet allows users to securely store, send, and receive digital assets, including cryptocurrencies and tokens native to the Sui network. More than just a storage solution, Sui Wallet provides users with the tools to interact with dApps, manage their assets, and participate in the growing DeFi ecosystem.<br><br><b>Key Features of Sui Wallet</b><br><b>1.User-Friendly Interface:</b> Sui Wallet is designed with an intuitive interface that simplifies navigation, making it accessible to both novice and experienced users.<br><b>2.Secure Asset Storage:</b> The wallet employs advanced security measures, including encryption and private key management, to ensure that users' assets are safeguarded against unauthorized access.<br><b>3.Multi-Asset Support:</b> Sui Wallet supports a variety of digital assets, allowing users to manage multiple cryptocurrencies and tokens within a single platform.<br><b>4.Seamless dApp Integration:</b> Users can easily connect to various decentralized applications built on the Sui blockchain, enabling them to participate in the DeFi ecosystem and access a range of services.<br><b>5.Transaction Management:</b> Sui Wallet provides users with tools to track their transaction history, manage pending transactions, and view detailed information about each transaction.<br><b>6.Cross-Platform Compatibility:</b> Available as both a web and mobile application, Sui Wallet allows users to access their assets and interact with the blockchain from anywhere.<br><b>7.Community-Driven Development:</b> The development of Sui Wallet is guided by community feedback, ensuring that the wallet evolves in response to user needs and preferences.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Sui Wallet Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Getting Started with Sui Wallet</b><br>To begin using Sui Wallet, users need to create an account. The registration process is straightforward and typically involves the following steps:<br><b>*Download the Wallet:</b> Users can download the Sui Wallet application from the official website or app store, depending on their device.<br><b>*Create a New Wallet:</b> Upon launching the application, users are prompted to create a new wallet. This involves generating a secure seed phrase that acts as the master key to their wallet.<br><b>*Backup the Seed Phrase:</b> Users are advised to write down their seed phrase and store it in a safe place. This phrase is essential for recovering the wallet in case of device loss or failure.<br><b>*Set a Password:</b> For added security, users can set a password that will be required to access their wallet.<br><br><b>2. Managing Assets</b><br>Once the wallet is set up, users can begin managing their digital assets. Sui Wallet allows users to:<br><b>*Receive Assets:</b> Users can generate a unique wallet address to receive cryptocurrencies and tokens. This address can be shared with others for funding their wallet.<br><b>*Send Assets:</b> To send assets, users can enter the recipient’s wallet address, specify the amount, and confirm the transaction. Sui Wallet will display transaction fees and estimated confirmation times.<br><b>*View Balances:</b> The wallet interface provides an overview of the user’s asset balances, including real-time updates on price movements and market trends.<br><br><b>3. Connecting to Decentralized Applications (dApps)</b><br>One of the standout features of Sui Wallet is its seamless integration with dApps. Users can connect their wallet to various decentralized applications built on the Sui blockchain, enabling them to:<br><b>*Trade on DEXs:</b> Users can access decentralized exchanges (DEXs) to trade cryptocurrencies and tokens directly from their wallet.<br><b>*Participate in DeFi Protocols:</b> Sui Wallet allows users to engage with various DeFi protocols, including lending, borrowing, and yield farming, all from a single platform.<br><b>*Access NFT Marketplaces:</b> Users can explore and trade non-fungible tokens (NFTs) by connecting their wallet to NFT marketplaces on the Sui blockchain.<br><br><b>4. Security Features</b><br>Security is a top priority for Sui Wallet. Here are some of the key security features that protect users’ assets:<br><b>*Encryption:</b> All sensitive data, including private keys and transaction information, is encrypted to prevent unauthorized access.<br><b>*Private Key Management:</b> Users have full control over their private keys, which are stored locally on their devices rather than on centralized servers.<br><b>*Multi-Factor Authentication:</b> For added security, Sui Wallet supports multi-factor authentication, requiring users to verify their identity through multiple methods.<br><b>*Regular Security Audits:</b> The development team conducts regular security audits to identify and address potential vulnerabilities in the wallet.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Significance of Sui Wallet in the Blockchain Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Empowering Users</b><br>Sui Wallet empowers users by providing them with a secure and user-friendly platform to manage their digital assets. By enabling easy access to the Sui blockchain, the wallet encourages individuals to explore decentralized technologies and participate in the growing DeFi movement.<br><br><b>2. Supporting the Sui Ecosystem</b><br>As the Sui blockchain continues to evolve, Sui Wallet plays a vital role in supporting its growth. By providing a reliable wallet solution, Sui Wallet attracts new users and developers, fostering innovation and collaboration within the Sui ecosystem.<br><br><b>3. Promoting Decentralization</b><br>Sui Wallet aligns with the core principles of blockchain technology by promoting decentralization and user ownership. Users retain full control over their assets, reducing reliance on centralized exchanges and traditional financial institutions.<br><br><b>4. Enhancing Accessibility</b><br>By offering a user-friendly interface and seamless integration with dApps, Sui Wallet enhances accessibility to blockchain technology. This is crucial for attracting a diverse user base, including those who may be new to cryptocurrencies.<br><br><b>5. Fostering Community Engagement</b><br>Sui Wallet is developed with community input, which fosters a sense of ownership and engagement among users. By listening to user feedback and implementing suggestions, the development team can create a wallet that meets the evolving needs of the community.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges Facing Sui Wallet</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Market Competition</b><br>The digital wallet market is highly competitive, with numerous wallets available to users. Sui Wallet must continually innovate and improve its features to differentiate itself from competitors and attract users.<br><br><b>2. Regulatory Scrutiny</b><br>As blockchain technology gains popularity, regulatory scrutiny is increasing. Sui Wallet must navigate the complex landscape of regulations governing digital assets while ensuring compliance with legal standards.<br><br><b>3. Security Threats</b><br>While Sui Wallet employs robust security measures, the risk of hacks and exploits in the blockchain space is ever-present. The development team must remain vigilant in updating security protocols to protect users’ assets.<br><br><b>4. User Education</b><br>As blockchain technology can be complex, educating users about how to use Sui Wallet effectively is crucial. Providing tutorials, guides, and support resources will help users maximize the wallet's potential and enhance their overall experience.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Sui Wallet</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Feature Expansion</b><br>As the Sui ecosystem continues to grow, Sui Wallet will need to expand its features to meet the evolving needs of users. This could include advanced analytics tools, enhanced visualization options, and support for additional asset types.<br><br><b>2. Cross-Chain Compatibility</b><br>The future of blockchain technology may involve increased cross-chain compatibility. Sui Wallet could explore opportunities to integrate with other blockchain networks, allowing users to manage assets across multiple ecosystems.<br><br><b>3. Community Building Initiatives</b><br>Investing in community-building initiatives can strengthen Sui Wallet's position within the blockchain ecosystem. Hosting events, educational webinars, and community challenges can enhance user involvement and create a loyal user base.<br><br><b>4. Enhanced User Experience</b><br>To stay competitive, Sui Wallet should continue to invest in improving user experience. This could include advanced search features, personalized recommendations, and mobile app development for on-the-go access to blockchain data.<br><br><b>5. Collaboration with Developers</b><br>Collaborating with developers to create tailored solutions for specific industries can enhance Sui Wallet's offerings. By understanding the unique needs of various sectors, Sui Wallet can provide valuable tools that drive innovation and adoption.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Sui Wallet is a powerful tool that enhances the user experience within the Sui blockchain ecosystem. By providing a secure, user-friendly platform for managing digital assets and engaging with decentralized applications, Sui Wallet empowers users to explore the world of blockchain technology.<br><br>As the blockchain landscape continues to evolve, Sui Wallet must navigate challenges such as market competition, regulatory scrutiny, and security threats. However, with a commitment to innovation and community engagement, the wallet is well-positioned for future growth.<br><br>For anyone interested in exploring the Sui blockchain and harnessing the power of decentralized technologies, Sui Wallet offers an invaluable resource. Its focus on transparency, security, and user experience sets it apart in a crowded market, making it an exciting platform to watch as the blockchain ecosystem continues to flourish. Whether you are a developer looking to build on the Sui network or an investor seeking to manage your assets effectively, Sui Wallet is your gateway to the future of blockchain technology.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "ux6GqUruYr",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
